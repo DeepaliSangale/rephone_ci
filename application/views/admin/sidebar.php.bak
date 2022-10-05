@@ -1,0 +1,82 @@
+<!--start sidebar -->
+<aside class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+        <div>
+            <img src="<?= base_url() ?>assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+        </div>
+        <div>
+            <h4 class="logo-text">Rephone2</h4>
+        </div>
+        <div class="toggle-icon ms-auto"><i class="bi bi-chevron-double-left"></i>
+        </div>
+    </div>
+    <!--navigation-->
+    <ul class="metismenu" id="menu">
+        <li class="<?= ($current_page == "Dashboard") ? 'mm-active' : '' ?>">
+            <a href="<?= base_url('admin') ?>">
+                <div class="parent-icon">
+                    <i class="fadeIn animated bx bx-line-chart-down"></i>
+                    <!--<i class="bi bi-house-door"></i>-->
+                </div>
+                <div class="menu-title">Dashboard</div>
+            </a>
+        </li>
+        <li class="<?= ($current_page == "Slider") ? 'mm-active' : '' ?>">
+            <a href="<?= base_url('admin/manage_slider') ?>">
+                <div class="parent-icon">
+                    <i class="fadeIn animated bx bx-line-chart-down"></i>
+                </div>
+                <div class="menu-title">Slider</div>
+            </a>
+        </li>
+        <li class="<?= ($current_page == "Pincode" || $current_page == "Pincode") ? 'mm-active' : '' ?>">
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-grid"></i>
+                </div>
+                <div class="menu-title">Masters</div>
+            </a>
+            <ul>
+                <li class="<?= ($current_page == "Pincode") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_pincode') ?>"><i class="bi bi-arrow-right-short"></i>Pincode</a>
+                <li class="<?= ($current_page == "Brand") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_brand') ?>"><i class="bi bi-arrow-right-short"></i>Brand</a>
+                <li class="<?= ($current_page == "Variant") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_variant') ?>"><i class="bi bi-arrow-right-short"></i>Variant</a>
+                <li class="<?= ($current_page == "Model") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_model') ?>"><i class="bi bi-arrow-right-short"></i>Model</a>
+                <li class="<?= ($current_page == "Questions") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_question') ?>"><i class="bi bi-arrow-right-short"></i>Questions</a>
+                <li class="<?= ($current_page == "Accessories") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_accessories') ?>"><i class="bi bi-arrow-right-short"></i>Accessories</a>
+                <li class="<?= ($current_page == "Age") ? 'mm-active' : '' ?>"> <a href="<?= base_url('admin/manage_age') ?>"><i class="bi bi-arrow-right-short"></i>Age</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="<?= ($current_page == "Product") ? 'mm-active' : '' ?>">
+            <a href="<?= base_url('admin/manage_product') ?>">
+                <div class="parent-icon"><i class="bi bi-person-circle"></i>
+                </div>
+                <div class="menu-title">Product</div>
+            </a>
+        </li>
+        <li class="<?= ($current_page == "Executive") ? 'mm-active' : '' ?>">
+            <a href="<?= base_url('admin/manage_executive') ?>">
+                <div class="parent-icon"><i class="bi bi-person-circle"></i>
+                </div>
+                <div class="menu-title">Executive</div>
+            </a>
+        </li>
+        <li class="<?= ($current_page == "Buy Order") ? 'mm-active' : '' ?>">
+            <a href="<?= base_url('admin/manage_buy_order') ?>">
+                <div class="parent-icon"><i class="bi bi-person-circle"></i>
+                </div>
+                <div class="menu-title">Order</div>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:void(0);" class="signout">
+                <div class="parent-icon">
+                    <i class="fadeIn animated bx bx-log-out"></i>
+                </div>
+                <div class="menu-title">Sign Out</div>
+            </a>
+        </li>
+    </ul>
+    <!--end navigation-->
+</aside>
+<!--end sidebar -->
